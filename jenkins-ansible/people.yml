@@ -1,0 +1,7 @@
+---
+- hosts: web1
+  tasks: 
+    - name: Transfer template to webserver
+      template: 
+        src: table.j2
+        dest: /var/www/html/index.php
