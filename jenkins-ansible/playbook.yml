@@ -1,0 +1,7 @@
+---
+- name: Playbook Test
+  hosts: test1
+
+  tasks:
+  - debug:
+      msg: " {{ MSG }} "
